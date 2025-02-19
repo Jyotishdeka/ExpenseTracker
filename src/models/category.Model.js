@@ -8,8 +8,9 @@ const categorySchema = new Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       default: null,
-    }, 
-    icon: { type: String }, 
+      index: true,
+    },
+    icon: { type: String },
   },
   {
     timestamps: true,

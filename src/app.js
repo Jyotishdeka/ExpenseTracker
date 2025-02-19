@@ -28,7 +28,13 @@ app.get("/", (req, res) => {
 
 ///route imports
 import userRouter from "./routes/user.routes.js"
+import categoryRouter from "./routes/category.routes.js"
+import budgetRouter from "./routes/budget.routes.js"
+import transactionRouter from "./routes/transaction.routes.js"
 
  app.use("/api/v1/users", userRouter)
+ app.use("/api/v1/categories", categoryRouter)
+ app.use("/api/v1/budgets", budgetRouter)
+ app.use("/api/v1/transactions", transactionRouter)
 
 export { app };
